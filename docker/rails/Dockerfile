@@ -13,6 +13,8 @@ WORKDIR /app
 ADD Gemfile .
 ADD Gemfile.lock .
 RUN bundle install -j4
+RUN gem install bundler:2.1.4
+RUN bundle install
 
 ADD . /app
 

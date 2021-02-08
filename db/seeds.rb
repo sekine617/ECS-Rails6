@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 5.times.each do |i|
-  Post.create(title: "test#{i + 1}")
+  Post.create(title: "test#{i + 2}")
 end
